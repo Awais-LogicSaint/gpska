@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// body {
+//   overflow-x: hidden;
+// }
+
+p {
+  margin: 0 !important;
+}
+
+// NAVBAR START
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-sticky {
+  background: #fdf0e2;
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 05);
+}
+.lang-link {
+  color: #fff;
+  text-decoration: none;
+}
+.lang-link:hover {
+  color: #f3b50a;
+}
+.nav--text {
+  color: #fff;
+}
+.nav--text:hover {
+  color: #f3b50a;
+}
+.nav-number-text {
+  color: #fff;
+}
+.nav-number-text:hover {
+  color: #f3b50a;
+}
+.nav-link {
+  color: #fff;
+  font-weight: 500;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: #f3b50a;
+}
+// NAVBAR END
+
+// HEADER START
+.animated-circle {
+  filter: blur(5.5rem);
+  position: absolute;
+  bottom: -55%;
+  left: -20%;
+  z-index: 0;
+  height: 250px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #f3b50a;
+  animation: scaling 1.5s infinite alternate;
+  transition: all 0.3s;
+}
+
+.animated-circle-sec {
+  filter: blur(5.5rem);
+  position: absolute;
+  top: 20px;
+  left: -20%;
+  z-index: 0;
+  height: 250px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #f3b50a;
+  animation: scaling 1.5s infinite alternate;
+  transition: all 0.3s;
+}
+.header {
+  position: relative;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  bottom: -25%;
+  z-index: -1;
+  width: 150px;
+  height: 250px;
+  background: url(../images/backgrounds/header-frame.png) center center
+    no-repeat;
+  background-size: cover;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: url(../images/backgrounds/header-vector.png);
+  background-size: cover;
+}
+
+.head--point:hover {
+  color: #00bed8 !important;
+  transition: all 0.2s ease-in-out;
+}
+.head-btn {
+  border: none;
+}
+.head-btn:hover {
+  background-color: #f3b50a;
+}
+// HEADER END
+
+// BENEFITS START
+.benefits-card-body {
+  height: 8rem;
+}
+.benefit-main-body {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.benefit-main-body::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #fff 0%, #f3b50a 100%);
+  transition: top 0.3s ease;
+  z-index: -1;
+}
+
+.benefit-main-body:hover::before {
+  top: 0;
+}
+.card-icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+.benefits {
+  position: relative;
+}
+.benefits::before {
+  content: '';
+  position: absolute;
+  top: -15%;
+  right: 5%;
+  z-index: 1;
+  width: 150px;
+  height: 250px;
+  background: url(../images/backgrounds/frame-benefit.png) center center
+    no-repeat;
+  background-size: cover;
+}
+// BENEFITS END
+
+// SERVICE START
+.service-card-body {
+  height: 45rem;
+}
+.service-card-btn {
+  width: 160px;
+  border: none;
+}
+.service-card-btn:hover {
+  background-color: #f3b50a;
+}
+.service-card-btn-2:hover {
+  background-color: #00bed8;
+}
+.check {
+  color: #00bed8;
+  transition: all 0.2s ease-in;
+}
+.service-point:hover .check {
+  color: #f3b50a; /* Color change on hover */
+}
+.services {
+  position: relative;
+  isolation: isolate;
+}
+.services::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(../images/backgrounds/service-vector.png);
+  background-size: cover;
+}
+
+.services::after {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -1%;
+  z-index: -1;
+  width: 250px;
+  height: 300px;
+  background: url(../images/backgrounds/service-frame.png);
+  background-size: cover;
+}
+// SERVICE END
+
+// DETAILS START
+.details {
+  position: relative;
+  isolation: isolate;
+}
+// .details::before {
+//   content: '';
+//   position: absolute;
+//   top: -25%;
+//   right: 0%;
+//   z-index: -1;
+//   width: 100%;
+//   height: 100%;
+//   background: url(../images/backgrounds/deatils-vector.png) no-repeat;
+//   background-size: cover;
+// }
+
+.animated-circle-details {
+  filter: blur(5.5rem);
+  position: absolute;
+  top: 30%;
+  left: -10%;
+  z-index: 0;
+  height: 250px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #f3b50a;
+  animation: scaling 1.5s infinite alternate;
+  transition: all 0.3s;
+}
+
+.details::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  z-index: -1;
+  width: 140px;
+  height: 320px;
+  background: url(../images/backgrounds/details-frame.png);
+  background-size: cover;
+}
+
+.details--3 {
+  position: relative;
+}
+
+.details--3::before {
+  content: '';
+  position: absolute;
+  top: -28%;
+  left: -11%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(../images/backgrounds/details3-vector.png) no-repeat;
+  background-size: cover;
+}
+// DETAILS END
+
+// SUBSCRIBE START
+.section-subscribe {
+  position: relative;
+}
+
+.section-subscribe::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(../images/backgrounds/subscription.png) center center
+    no-repeat;
+  background-size: cover;
+}
+
+.sub--btn:hover {
+  color: #fff;
+  background-color: #f3b50a;
+}
+// SUBSCRIBE END
+
+// FOOTER START
+// FOOTER END
+
+// ANIMATION FOR ALL CIRCLES
+@keyframes scaling {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(0.7);
+  }
+}
+
+///////////////////////////
+.to-top-btn {
+  position: fixed;
+  z-index: 20;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #00bed8;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+}
+
+.to-top-btn {
+  &:hover {
+    background-color: #f3b50a;
+  }
+}
+
+.to-top-btn {
+  img {
+    margin-bottom: 0.25rem;
+    width: 18px;
+  }
+}
+
+.show {
+  opacity: 1;
+}
+// MODAL
+.form-btn {
+  border: none;
+}
+.form-btn:hover {
+  background-color: #f3b50a;
+}
+.btn--close {
+  padding: 4px 10px;
+}
+.form-inner-text {
+  background-color: #eee;
+}
